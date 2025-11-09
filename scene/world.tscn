@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1ygxyafnpb46"]
+[gd_scene load_steps=3 format=3 uid="uid://d1ygxyafnpb46"]
 
 [ext_resource type="PackedScene" uid="uid://drhjm2ip0dw20" path="res://scene/tiles/tilemap.tscn" id="1_pjass"]
+[ext_resource type="Script" uid="uid://bxic528cie65k" path="res://code/pathspawner.gd" id="2_txmk2"]
 
 [node name="world" type="Node2D"]
 
