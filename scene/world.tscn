@@ -11,11 +11,3 @@ layer_0/tile_data = PackedInt32Array(0, 65536, 5, 1, 65536, 5, 2, 65536, 5, 3, 6
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(935, 439)
 zoom = Vector2(0.66, 0.66)
-
-[node name="Pathspawner" type="Node2D" parent="."]
-script = ExtResource("2_txmk2")
-
-[node name="Timer" type="Timer" parent="Pathspawner"]
-autostart = true
-
-[connection signal="timeout" from="Pathspawner/Timer" to="Pathspawner" method="_on_timer_timeout"]
