@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csprlwlkp0il8"
-path="res://.godot/imported/Dash_Dust_right_Up.png-a1e445550651e1f159fb4ef541adc30c.ctex"
+path="res://.godot/imported/Dash_Dust_right_Up.png-13027e3ff3724d95f38994aeaea6fd0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/The Female Adventurer - Free/Dash/Dust/Dash_Dust_right_Up.png"
-dest_files=["res://.godot/imported/Dash_Dust_right_Up.png-a1e445550651e1f159fb4ef541adc30c.ctex"]
+source_file="res://Asset/chara/The Female Adventurer - Free/Dash/Dust/Dash_Dust_right_Up.png"
+dest_files=["res://.godot/imported/Dash_Dust_right_Up.png-13027e3ff3724d95f38994aeaea6fd0b.ctex"]
 
 [params]
 

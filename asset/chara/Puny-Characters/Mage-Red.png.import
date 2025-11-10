@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f8fgkxjs4hlm"
-path="res://.godot/imported/Mage-Red.png-0d82a833c00c1cf203a32f44a8b62756.ctex"
+path="res://.godot/imported/Mage-Red.png-b7c38ab0ec01a7c6be2e555365b9da92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Mage-Red.png"
-dest_files=["res://.godot/imported/Mage-Red.png-0d82a833c00c1cf203a32f44a8b62756.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Mage-Red.png"
+dest_files=["res://.godot/imported/Mage-Red.png-b7c38ab0ec01a7c6be2e555365b9da92.ctex"]
 
 [params]
 

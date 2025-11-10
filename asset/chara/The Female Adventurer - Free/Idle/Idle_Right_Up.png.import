@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3c64dlpn63ld"
-path="res://.godot/imported/Idle_Right_Up.png-c5c0de90108c91dbc120472bff95e132.ctex"
+path="res://.godot/imported/Idle_Right_Up.png-8edfe1a855f95f8dc3f726c1afa696f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/The Female Adventurer - Free/Idle/Idle_Right_Up.png"
-dest_files=["res://.godot/imported/Idle_Right_Up.png-c5c0de90108c91dbc120472bff95e132.ctex"]
+source_file="res://Asset/chara/The Female Adventurer - Free/Idle/Idle_Right_Up.png"
+dest_files=["res://.godot/imported/Idle_Right_Up.png-8edfe1a855f95f8dc3f726c1afa696f1.ctex"]
 
 [params]
 

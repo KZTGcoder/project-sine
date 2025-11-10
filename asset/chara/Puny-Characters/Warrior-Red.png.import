@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7xsdj2ydd3o8"
-path="res://.godot/imported/Warrior-Red.png-e25688fb9ff068fc5851a745de424dcf.ctex"
+path="res://.godot/imported/Warrior-Red.png-6cf80ecd6cc314410a56ec28702c5509.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Warrior-Red.png"
-dest_files=["res://.godot/imported/Warrior-Red.png-e25688fb9ff068fc5851a745de424dcf.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Warrior-Red.png"
+dest_files=["res://.godot/imported/Warrior-Red.png-6cf80ecd6cc314410a56ec28702c5509.ctex"]
 
 [params]
 

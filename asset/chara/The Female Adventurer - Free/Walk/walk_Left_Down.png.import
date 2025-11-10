@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxrfgo5bojjc3"
-path="res://.godot/imported/walk_Left_Down.png-005e07ff386a5f6cd2a16acbdd8ee30d.ctex"
+path="res://.godot/imported/walk_Left_Down.png-9c3834a93e7d621942b5c50779bda2fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/The Female Adventurer - Free/Walk/walk_Left_Down.png"
-dest_files=["res://.godot/imported/walk_Left_Down.png-005e07ff386a5f6cd2a16acbdd8ee30d.ctex"]
+source_file="res://Asset/chara/The Female Adventurer - Free/Walk/walk_Left_Down.png"
+dest_files=["res://.godot/imported/walk_Left_Down.png-9c3834a93e7d621942b5c50779bda2fd.ctex"]
 
 [params]
 

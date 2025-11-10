@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://568bbjwi27dq"
-path="res://.godot/imported/Orc-Peon-Cyan.png-6d72fe6acb4df973a4bb471c8e9f72b6.ctex"
+path="res://.godot/imported/Orc-Peon-Cyan.png-7ca072802548042c794ccd340604b5ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Orc-Peon-Cyan.png"
-dest_files=["res://.godot/imported/Orc-Peon-Cyan.png-6d72fe6acb4df973a4bb471c8e9f72b6.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Orc-Peon-Cyan.png"
+dest_files=["res://.godot/imported/Orc-Peon-Cyan.png-7ca072802548042c794ccd340604b5ba.ctex"]
 
 [params]
 

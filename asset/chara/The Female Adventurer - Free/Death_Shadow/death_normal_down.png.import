@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqc4vl30vlgrw"
-path="res://.godot/imported/death_normal_down.png-257f6c763da472c1c9be99379ea731cd.ctex"
+path="res://.godot/imported/death_normal_down.png-b71ca662538aabf238abd57b5ffdcebe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/The Female Adventurer - Free/Death_Shadow/death_normal_down.png"
-dest_files=["res://.godot/imported/death_normal_down.png-257f6c763da472c1c9be99379ea731cd.ctex"]
+source_file="res://Asset/chara/The Female Adventurer - Free/Death_Shadow/death_normal_down.png"
+dest_files=["res://.godot/imported/death_normal_down.png-b71ca662538aabf238abd57b5ffdcebe.ctex"]
 
 [params]
 

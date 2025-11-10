@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1kagsbahq880"
-path="res://.godot/imported/Orc-Soldier-Red.png-18583d2489895b16362db6a092b764f1.ctex"
+path="res://.godot/imported/Orc-Soldier-Red.png-419da1de7fea67b24e0fef468899d1bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Orc-Soldier-Red.png"
-dest_files=["res://.godot/imported/Orc-Soldier-Red.png-18583d2489895b16362db6a092b764f1.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Orc-Soldier-Red.png"
+dest_files=["res://.godot/imported/Orc-Soldier-Red.png-419da1de7fea67b24e0fef468899d1bc.ctex"]
 
 [params]
 

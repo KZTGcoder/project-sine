@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds52ilrondlbd"
-path="res://.godot/imported/decorations.png-45f10224ec3a317052fe921da7cb2ef8.ctex"
+path="res://.godot/imported/decorations.png-ecb4f9440a7d10d862c2bd8fa451fdc0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/obj/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/decorations.png"
-dest_files=["res://.godot/imported/decorations.png-45f10224ec3a317052fe921da7cb2ef8.ctex"]
+source_file="res://Asset/obj/basic_tileset_and_assets_32x32_standard_v2/basic_tileset_and_assets_standard/decorations.png"
+dest_files=["res://.godot/imported/decorations.png-ecb4f9440a7d10d862c2bd8fa451fdc0.ctex"]
 
 [params]
 

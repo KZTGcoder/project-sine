@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdll0nj6hox7c"
-path="res://.godot/imported/Jump.png-bfbbccf1d86141529eaa53cc82fa41fa.ctex"
+path="res://.godot/imported/Jump.png-13dbe1434ff3adc371598011b107e2e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/The Female Adventurer - Free/Jump - NEW/Normal/Jump.png"
-dest_files=["res://.godot/imported/Jump.png-bfbbccf1d86141529eaa53cc82fa41fa.ctex"]
+source_file="res://Asset/chara/The Female Adventurer - Free/Jump - NEW/Normal/Jump.png"
+dest_files=["res://.godot/imported/Jump.png-13dbe1434ff3adc371598011b107e2e5.ctex"]
 
 [params]
 

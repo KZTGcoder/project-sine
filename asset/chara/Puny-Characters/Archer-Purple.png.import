@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7l81psp1hrxa"
-path="res://.godot/imported/Archer-Purple.png-51faa6cf71ee28b62731a7b3145dcc71.ctex"
+path="res://.godot/imported/Archer-Purple.png-216e8a8290804904bae47558a0ba64c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Archer-Purple.png"
-dest_files=["res://.godot/imported/Archer-Purple.png-51faa6cf71ee28b62731a7b3145dcc71.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Archer-Purple.png"
+dest_files=["res://.godot/imported/Archer-Purple.png-216e8a8290804904bae47558a0ba64c5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0iivjjtays6m"
-path="res://.godot/imported/Grass1.png-658b20f108fbf429b73b39a74043bb9d.ctex"
+path="res://.godot/imported/Grass1.png-0126252583d4ba58735bb635e112a627.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Environment/Grass1.png"
-dest_files=["res://.godot/imported/Grass1.png-658b20f108fbf429b73b39a74043bb9d.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Environment/Grass1.png"
+dest_files=["res://.godot/imported/Grass1.png-0126252583d4ba58735bb635e112a627.ctex"]
 
 [params]
 

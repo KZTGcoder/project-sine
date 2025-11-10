@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfygifsa38y8k"
-path="res://.godot/imported/Slime.png-7b661077208a2edf26b5e9f66d79edf0.ctex"
+path="res://.godot/imported/Slime.png-5ff658a0f817a389ebd4c13e5040fc92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Puny-Characters/Slime.png"
-dest_files=["res://.godot/imported/Slime.png-7b661077208a2edf26b5e9f66d79edf0.ctex"]
+source_file="res://Asset/chara/Puny-Characters/Slime.png"
+dest_files=["res://.godot/imported/Slime.png-5ff658a0f817a389ebd4c13e5040fc92.ctex"]
 
 [params]
 

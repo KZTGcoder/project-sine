@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qih0b03a7ys1"
-path="res://.godot/imported/Mushroom-Run.png-a2047e4a0a4ceafc80b5a91c43464b8a.ctex"
+path="res://.godot/imported/Mushroom-Run.png-68cacc353646eecbddebbb87eba24621.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Run.png"
-dest_files=["res://.godot/imported/Mushroom-Run.png-a2047e4a0a4ceafc80b5a91c43464b8a.ctex"]
+source_file="res://Asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Run.png"
+dest_files=["res://.godot/imported/Mushroom-Run.png-68cacc353646eecbddebbb87eba24621.ctex"]
 
 [params]
 
