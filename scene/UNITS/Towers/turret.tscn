@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://qn8l1oiko005"]
+
+[ext_resource type="Texture2D" uid="uid://c4bbsh0hrkyy2" path="res://Asset/chara/Puny-Characters/Soldier-Blue.png" id="1_pmgjk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qer3b"]
+size = Vector2(34, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xm3ra"]
+atlas = ExtResource("1_pmgjk")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jdos"]
+atlas = ExtResource("1_pmgjk")
+region = Rect2(256, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2221"]
+atlas = ExtResource("1_pmgjk")
+region = Rect2(288, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okde1"]
+atlas = ExtResource("1_pmgjk")
+region = Rect2(320, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khmys"]
+atlas = ExtResource("1_pmgjk")
+region = Rect2(352, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_num0g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xm3ra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jdos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2221")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okde1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khmys")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m5aty"]
+radius = 66.007576
+
+[node name="turret" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 1.5)
+shape = SubResource("RectangleShape2D_qer3b")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, 16)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 1.5707964
+scale = Vector2(1.555, 1.555)
+sprite_frames = SubResource("SpriteFrames_num0g")
+frame_progress = 0.3743833
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_m5aty")
+debug_color = Color(0.6397616, 0.5204552, 0.20358083, 0.41960785)
+
+[node name="Node" type="Node" parent="."]
