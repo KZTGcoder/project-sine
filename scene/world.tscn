@@ -16,6 +16,7 @@ layer_0/tile_data = PackedInt32Array(1, 65536, 5, 2, 65536, 5, 3, 65536, 5, 4, 6
 script = ExtResource("2_txmk2")
 
 [node name="Timer" type="Timer" parent="Pathspawner"]
+wait_time = 1.3219999999999998
 autostart = true
 
 [connection signal="timeout" from="Pathspawner/Timer" to="Pathspawner" method="_on_timer_timeout"]
