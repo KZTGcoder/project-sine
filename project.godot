@@ -15,6 +15,12 @@ run/main_scene="uid://d1ygxyafnpb46"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://asset/icon.svg"
 
+[display]
+
+window/size/viewport_width=2080
+window/size/viewport_height=896
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="project sine"
