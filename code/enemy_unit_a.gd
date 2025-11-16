@@ -1,14 +1,16 @@
 extends CharacterBody2D
 
 @export var speed: float = 100.0
+@onready var healthbar: ProgressBar = $Node2D/healthbar
 var max_health = 30
 var cur_health = 30
 
-#func _ready() -> void:
-	#update_health()
 
 func _process(delta: float) -> void:
 	update_health()
+	
+
+func _physics_process(delta: float) -> void:
 	var path_follow_node = get_parent()
 	var new_progress = path_follow_node.get_progress() + speed * delta
 
@@ -23,8 +25,6 @@ func _process(delta: float) -> void:
 
 
 func update_health():
-	var healthbar = $healthbar
-	
 	healthbar.max_value = max_health
 	healthbar.value = cur_health
 	

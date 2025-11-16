@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://drejpowrjklkf"]
+[gd_scene load_steps=14 format=3 uid="uid://drejpowrjklkf"]
 
 [ext_resource type="Script" uid="uid://bibfqcfnqfq7w" path="res://code/enemy_unit_a.gd" id="1_2ynkh"]
 [ext_resource type="Texture2D" uid="uid://qih0b03a7ys1" path="res://Asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Run.png" id="1_p0j32"]
+[ext_resource type="Script" uid="uid://dce08vaa86n4n" path="res://enemy_healthbar.gd" id="3_iesgo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ynkh"]
 atlas = ExtResource("1_p0j32")
@@ -78,12 +79,16 @@ sprite_frames = SubResource("SpriteFrames_w5xv6")
 frame_progress = 0.18634032
 offset = Vector2(0.94, -15.735)
 
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("3_iesgo")
+
+[node name="healthbar" type="ProgressBar" parent="Node2D"]
+offset_left = -29.0
+offset_top = 29.0
+offset_right = 29.0
+offset_bottom = 56.0
+pivot_offset = Vector2(29, 14)
+show_percentage = false
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_xa2hr")
-
-[node name="healthbar" type="ProgressBar" parent="."]
-offset_left = -19.0
-offset_top = 19.0
-offset_right = 20.0
-offset_bottom = 46.0
-value = 100.0
