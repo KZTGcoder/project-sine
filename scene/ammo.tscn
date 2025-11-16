@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckj7cnmwdf1c6"]
+
+[ext_resource type="Script" uid="uid://8mqu7vey8sm4" path="res://code/bullet.gd" id="1_176dg"]
+[ext_resource type="Texture2D" uid="uid://bqxdylnbt361r" path="res://Asset/obj/temp bullet.png" id="2_et2ru"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yxh3r"]
+radius = 9.0
+height = 22.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_176dg"]
+radius = 11.0
+height = 24.0
+
+[node name="bullet" type="CharacterBody2D"]
+script = ExtResource("1_176dg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 2.3841858e-07)
+scale = Vector2(0.45963544, 0.27807128)
+texture = ExtResource("2_et2ru")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_yxh3r")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_176dg")
+debug_color = Color(0.64502823, 0.5185873, 0.18579036, 0.41960785)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

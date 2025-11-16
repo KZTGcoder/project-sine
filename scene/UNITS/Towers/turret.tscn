@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://qn8l1oiko005"]
+[gd_scene load_steps=11 format=3 uid="uid://qn8l1oiko005"]
 
 [ext_resource type="Texture2D" uid="uid://c4bbsh0hrkyy2" path="res://Asset/chara/Puny-Characters/Soldier-Blue.png" id="1_pmgjk"]
+[ext_resource type="Script" uid="uid://u0h56y3d7y2n" path="res://code/turret.gd" id="1_qer3b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qer3b"]
 size = Vector2(34, 25)
@@ -49,15 +50,16 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m5aty"]
-radius = 66.007576
+radius = 261.04788
 
 [node name="turret" type="StaticBody2D"]
+script = ExtResource("1_qer3b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 1.5)
 shape = SubResource("RectangleShape2D_qer3b")
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="Aim" type="Marker2D" parent="."]
 position = Vector2(0, 16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -66,10 +68,13 @@ scale = Vector2(1.555, 1.555)
 sprite_frames = SubResource("SpriteFrames_num0g")
 frame_progress = 0.3743833
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="tower" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tower"]
 shape = SubResource("CircleShape2D_m5aty")
 debug_color = Color(0.6397616, 0.5204552, 0.20358083, 0.41960785)
 
-[node name="Node" type="Node" parent="."]
+[node name="bulletcontainer" type="Node" parent="."]
+
+[connection signal="body_entered" from="tower" to="." method="_on_tower_body_entered"]
+[connection signal="body_exited" from="tower" to="." method="_on_tower_body_exited"]

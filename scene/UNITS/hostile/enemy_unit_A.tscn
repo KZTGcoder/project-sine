@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://drejpowrjklkf"]
 
 [ext_resource type="Script" uid="uid://bibfqcfnqfq7w" path="res://code/enemy_unit_a.gd" id="1_2ynkh"]
-[ext_resource type="Texture2D" uid="uid://qih0b03a7ys1" path="res://asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Run.png" id="1_p0j32"]
+[ext_resource type="Texture2D" uid="uid://qih0b03a7ys1" path="res://Asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Run.png" id="1_p0j32"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ynkh"]
 atlas = ExtResource("1_p0j32")
@@ -80,3 +80,10 @@ offset = Vector2(0.94, -15.735)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_xa2hr")
+
+[node name="healthbar" type="ProgressBar" parent="."]
+offset_left = -19.0
+offset_top = 19.0
+offset_right = 20.0
+offset_bottom = 46.0
+value = 100.0
