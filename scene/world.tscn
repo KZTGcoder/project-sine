@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://drhjm2ip0dw20" path="res://scene/tiles/tilemap.tscn" id="1_pjass"]
 [ext_resource type="Script" uid="uid://bxic528cie65k" path="res://code/pathspawner.gd" id="2_txmk2"]
-[ext_resource type="PackedScene" uid="uid://qn8l1oiko005" path="res://scene/UNITS/Towers/turret.tscn" id="3_w4qq1"]
+[ext_resource type="Script" uid="uid://cu3cwm32c30aq" path="res://code/obj.gd" id="3_w4qq1"]
 
 [node name="world" type="Node2D"]
 
@@ -20,18 +20,17 @@ script = ExtResource("2_txmk2")
 wait_time = 1.3219999999999998
 autostart = true
 
-[node name="towers" type="Node2D" parent="."]
+[node name="road" type="Area2D" parent="." groups=["restricted_area"]]
 
-[node name="turret2" parent="towers" instance=ExtResource("3_w4qq1")]
-position = Vector2(749, 347)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="road"]
+polygon = PackedVector2Array(26, -11, 134, 3, 145, 77, 173, 81, 180, 110, 206, 114, 207, 138, 227, 145, 718, 143, 720, 111, 970, 111, 1047, 82, 1534, 81, 1583, 83, 1586, 108, 1615, 114, 1677, 114, 1722, 177, 1771, 179, 1777, 266, 1805, 274, 1807, 396, 1780, 399, 1774, 432, 1746, 434, 1740, 494, 1685, 496, 1678, 528, 1655, 528, 1646, 557, 1048, 558, 1039, 573, 1040, 592, 728, 591, 719, 602, 719, 623, 693, 625, 686, 636, 688, 656, 666, 655, 656, 661, 655, 676, 656, 746, 667, 751, 718, 752, 721, 780, 740, 784, 806, 785, 1306, 783, 1551, 784, 1553, 812, 1584, 818, 1587, 845, 1646, 849, 1651, 878, 1677, 879, 1683, 941, 1710, 945, 1712, 1042, 1716, 1079, 1530, 1077, 1521, 1032, 1515, 1008, 1426, 1006, 1419, 977, 1388, 973, 1328, 977, 1329, 954, 1321, 943, 1208, 941, 849, 940, 496, 943, 494, 915, 477, 910, 434, 910, 428, 881, 402, 877, 399, 853, 390, 846, 375, 845, 369, 838, 368, 690, 394, 688, 402, 678, 400, 624, 427, 623, 434, 592, 457, 590, 465, 562, 491, 557, 496, 527, 524, 526, 529, 497, 583, 495, 591, 490, 591, 465, 650, 465, 659, 432, 718, 432, 721, 400, 1125, 402, 1293, 403, 1297, 426, 1307, 433, 1381, 434, 1392, 424, 1394, 399, 1543, 401, 1553, 392, 1553, 368, 1568, 367, 1568, 336, 1578, 335, 1586, 329, 1586, 297, 1581, 244, 1556, 238, 1547, 206, 1507, 203, 1046, 205, 1037, 239, 977, 238, 788, 238, 784, 254, 782, 272, 595, 270, 176, 272, 176, 249, 168, 237, 144, 237, 144, 214, 138, 207, 112, 207, 109, 179, 95, 172, 18, 176)
 
-[node name="turret" parent="towers" instance=ExtResource("3_w4qq1")]
-position = Vector2(719, 703)
+[node name="unit" type="Node2D" parent="."]
 
-[node name="turret3" parent="towers" instance=ExtResource("3_w4qq1")]
-position = Vector2(1515, 312)
+[node name="obj" type="Node2D" parent="."]
+script = ExtResource("3_w4qq1")
 
-[node name="turret4" parent="towers" instance=ExtResource("3_w4qq1")]
-position = Vector2(1456, 670)
+[node name="structure" type="Node2D" parent="."]
 
 [connection signal="timeout" from="Pathspawner/Timer" to="Pathspawner" method="_on_timer_timeout"]
+[connection signal="body_entered" from="road" to="obj" method="_on_road_body_entered"]
