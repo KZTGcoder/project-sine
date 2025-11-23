@@ -1,8 +1,29 @@
-[gd_scene load_steps=14 format=3 uid="uid://drejpowrjklkf"]
+[gd_scene load_steps=20 format=3 uid="uid://drejpowrjklkf"]
 
 [ext_resource type="Script" uid="uid://bibfqcfnqfq7w" path="res://code/enemy_unit_a.gd" id="1_2ynkh"]
 [ext_resource type="Texture2D" uid="uid://qih0b03a7ys1" path="res://Asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Run.png" id="1_p0j32"]
-[ext_resource type="Script" uid="uid://dce08vaa86n4n" path="res://enemy_healthbar.gd" id="3_iesgo"]
+[ext_resource type="Texture2D" uid="uid://csfe0pu8c1nr7" path="res://Asset/chara/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Hit.png" id="2_0nnab"]
+[ext_resource type="Script" uid="uid://dce08vaa86n4n" path="res://code/enemy_healthbar.gd" id="3_iesgo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5xv6"]
+atlas = ExtResource("2_0nnab")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xa2hr"]
+atlas = ExtResource("2_0nnab")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58wy3"]
+atlas = ExtResource("2_0nnab")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yn07n"]
+atlas = ExtResource("2_0nnab")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipdes"]
+atlas = ExtResource("2_0nnab")
+region = Rect2(320, 0, 80, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ynkh"]
 atlas = ExtResource("1_p0j32")
@@ -40,6 +61,26 @@ region = Rect2(560, 0, 80, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_w5xv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xa2hr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58wy3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yn07n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipdes")
+}],
+"loop": false,
+"name": &"get_dmg",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_2ynkh")
 }, {
 "duration": 1.0,
@@ -64,7 +105,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_kvw1c")
 }],
 "loop": true,
-"name": &"default",
+"name": &"walk_side",
 "speed": 8.0
 }]
 
@@ -76,7 +117,7 @@ script = ExtResource("1_2ynkh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w5xv6")
-frame_progress = 0.18634032
+animation = &"get_dmg"
 offset = Vector2(0.94, -15.735)
 
 [node name="Node2D" type="Node2D" parent="."]

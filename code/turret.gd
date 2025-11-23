@@ -6,6 +6,13 @@ var pathName
 var currtargets = []
 var curr
 
+func _process(delta: float):
+	if is_instance_valid(curr):
+		self.look_at(curr.global_position)
+	else:
+		for i in get_node("bulletcontainer").get_child_count():
+			get_node("bulletcontainer").get_child(i).queue_free()
+
 func _on_tower_body_entered(body: Node2D) -> void:
 	if "enemy_unit_A" in body.name:
 		var tempArray = []
@@ -35,4 +42,4 @@ func _on_tower_body_entered(body: Node2D) -> void:
 		
 
 func _on_tower_body_exited(body: Node2D) -> void:
-	pass # Replace with function body.
+	currtargets = get_node("tower").get_overlapping_bodies()

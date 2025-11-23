@@ -5,6 +5,7 @@ var speed = 1000
 var pathName = ""
 var bulletDmg = 10
 
+
 func _physics_process(delta: float) -> void:
 	var pathSpawnerNode = get_tree().get_root().get_node("world/Pathspawner")
 	for i in pathSpawnerNode.get_child_count():
@@ -21,3 +22,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if "enemy_unit_A" in body.name:
 		body.cur_health -= bulletDmg
 		queue_free()
+
+func bullet():
+	pass

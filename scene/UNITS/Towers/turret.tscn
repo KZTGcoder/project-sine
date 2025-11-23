@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://u0h56y3d7y2n" path="res://code/turret.gd" id="1_qer3b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qer3b"]
-size = Vector2(34, 25)
+size = Vector2(34, 35)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xm3ra"]
 atlas = ExtResource("1_pmgjk")
@@ -50,29 +50,29 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m5aty"]
-radius = 261.04788
+radius = 250.0
 
 [node name="turret" type="StaticBody2D"]
 script = ExtResource("1_qer3b")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4, 1.5)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_qer3b")
 
 [node name="Aim" type="Marker2D" parent="."]
-position = Vector2(0, 16)
+position = Vector2(17, 4)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-rotation = 1.5707964
-scale = Vector2(1.555, 1.555)
+scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_num0g")
-frame_progress = 0.3743833
+frame = 1
+frame_progress = 0.037407983
 
 [node name="tower" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tower"]
 shape = SubResource("CircleShape2D_m5aty")
-debug_color = Color(0.6397616, 0.5204552, 0.20358083, 0.41960785)
+debug_color = Color(0.5003708, 0.58247447, 1.1551381e-06, 0.41960785)
 
 [node name="bulletcontainer" type="Node" parent="."]
 
